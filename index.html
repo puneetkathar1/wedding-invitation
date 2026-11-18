@@ -451,12 +451,14 @@ main{max-width:100%;margin:0 auto;padding:0 12px;box-sizing:border-box}
 .orn svg{width:14px;height:14px}
 #env{height:100dvh;padding:20px 12px;gap:clamp(1rem,3vh,2rem)}
 .eh{padding:0 1rem}
-.eh .pn{font-size:clamp(1.8rem,10vw,3rem)}
-.eh .mt{font-size:0.65rem}
+.eh .pn{font-size:clamp(1.8rem,10vw,2.8rem)}
+.eh .mt{font-size:0.6rem}
+.nm p.mt{font-size:0.48rem !important}
+.nm p.mt + p.mt{font-size:0.5rem !important}
 .ew{width:min(95vw,560px);height:auto}
-.ew .lay{width:100%;height:auto}
-.fl{left:5%;right:5%;top:5%;height:85%}
-.sl{left:50%;top:100%;width:30%;aspect-ratio:1;transform:translate(-50%,-50%)}
+.fl{left:3%;right:3%;top:3%;height:84%}
+.fl .fc,#env.open .fl{transform-origin:50% 0;}
+.lt{top:6%;height:82%;}
 #sc{position:fixed;inset:0;z-index:70;display:none;pointer-events:none;overflow:hidden}
 #sc .pnl{height:50%}
 #sc .pb1{background-position:50% calc((var(--vh) - var(--H))/2 - var(--vh)/2)}
@@ -466,24 +468,33 @@ main{max-width:100%;margin:0 auto;padding:0 12px;box-sizing:border-box}
 .scr{font-size:1rem}
 .scr .big{font-size:1.8rem}
 .scr .dtl{font-size:0.65rem}
+}
 @media (max-width:480px){
-  body{font-size:0.95rem}
-  main{padding:0 10px}
-  .nm{font-size:clamp(1.8rem,12vw,3rem) !important}
-  .sec{padding:2rem 0 0}
-  .cd{grid-template-columns:repeat(2,1fr)}
-  .calw{padding:0.8rem 0.6rem}
-  .ev2{padding:0.9rem 0.7rem}
-  .tl{padding-left:26px}
-  #env{padding:16px 10px}
-  .ew{width:min(98vw,520px)}
-  .fl{left:3%;right:3%;top:3%;height:90%}
+body{font-size:0.95rem}
+main{padding:0 10px}
+.nm{font-size:clamp(1.8rem,12vw,3rem) !important}
+.sec{padding:2rem 0 0}
+.cd{grid-template-columns:repeat(2,1fr)}
+.calw{padding:0.8rem 0.6rem}
+.ev2{padding:0.9rem 0.7rem}
+.tl{padding-left:26px}
+#env{padding:16px 10px}
+.ew{width:min(98vw,520px)}
+.fl{left:2%;right:2%;top:2%;height:90%}
+.eh .pn{font-size:clamp(1.6rem,12vw,2.6rem)}
+.eh .mt{font-size:0.55rem}
+.nm p.mt{font-size:0.45rem !important}
+.nm p.mt + p.mt{font-size:0.48rem !important}
 }
 @media (max-width:360px){
-  .nm{font-size:clamp(1.6rem,14vw,2.6rem) !important}
-  .cd b{font-size:1.6rem}
-  .ev2 .row b{font-size:clamp(1.8rem,9vw,2.2rem)}
-}}
+.nm{font-size:clamp(1.6rem,14vw,2.6rem) !important}
+.cd b{font-size:1.6rem}
+.ev2 .row b{font-size:clamp(1.8rem,9vw,2.2rem)}
+.eh .pn{font-size:clamp(1.5rem,12vw,2.4rem)}
+.eh .mt{font-size:0.5rem}
+.nm p.mt{font-size:0.42rem !important}
+.nm p.mt + p.mt{font-size:0.45rem !important}
+}
 </style>
 </head>
 <body class="lock" contenteditable="false" data-new-gr-c-s-check-loaded="14.1348.0" data-gr-ext-installed=""><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><lineargradient id="foil" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100" y2="100"><stop offset="0" stop-color="#b8924a"></stop><stop offset=".22" stop-color="#e8b0c8"></stop><stop offset=".45" stop-color="#b8924a"></stop><stop offset=".7" stop-color="#b8924a"></stop><stop offset="1" stop-color="#b8924a"></stop></lineargradient></defs></svg>
