@@ -575,6 +575,33 @@ body {
   text-wrap: balance;
 }
 
+.closing-section h2.gv {
+  font-size: clamp(2.15rem, 8.5vw, 3rem);
+}
+
+.closing-message {
+  max-width: 32rem;
+  margin: 0.8rem auto 1.2rem;
+  color: var(--ink-soft);
+  font-size: clamp(1.05rem, 4vw, 1.2rem);
+  line-height: 1.65;
+  text-wrap: balance;
+}
+
+.closing-love {
+  margin-bottom: 0.15rem;
+  color: var(--gold-soft);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.closing-family {
+  margin-top: 0;
+  color: var(--rose-deep);
+  font-size: clamp(1.1rem, 4.4vw, 1.3rem);
+  letter-spacing: 0.025em;
+}
+
 .sec > .vn {
   color: var(--rose-deep);
   font-family: "Cormorant Garamond", Georgia, serif;
