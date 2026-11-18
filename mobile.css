@@ -71,6 +71,10 @@ main {
   overflow-wrap: anywhere;
 }
 
+.paper .pc .degree {
+  text-transform: none;
+}
+
 .paper .pc .nw {
   display: inline;
   white-space: normal;
