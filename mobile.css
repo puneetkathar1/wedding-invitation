@@ -72,7 +72,11 @@ main {
 }
 
 .paper .pc .degree {
-  text-transform: none;
+  text-transform: uppercase;
+}
+
+.paper .pc .degree-lowercase {
+  text-transform: lowercase;
 }
 
 .paper .pc .nw {
