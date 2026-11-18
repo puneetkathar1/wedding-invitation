@@ -1,0 +1,466 @@
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+  padding-inline: clamp(12px, 3vw, 20px);
+}
+
+.hero {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 896 / 1200;
+  margin-inline: auto;
+  background-size: 100% 100% !important;
+  background-position: center top !important;
+}
+
+.paper {
+  width: 100%;
+  min-height: 134cqw;
+}
+
+.pc .sec {
+  padding-top: clamp(2rem, 7vw, 3rem);
+}
+
+.paper .nm {
+  font-size: clamp(2.2rem, 10vw, 3.5rem);
+  margin: 1rem 0 0.5rem;
+}
+
+.paper .amp {
+  font-size: clamp(1.3rem, 5vw, 1.8rem);
+}
+
+.paper .amp::before,
+.paper .amp::after {
+  width: clamp(2rem, 12vw, 4rem);
+}
+
+.sec h2 {
+  font-size: clamp(2rem, 8vw, 2.8rem);
+  line-height: 1.12;
+}
+
+.paper p {
+  font-size: clamp(1rem, 4vw, 1.15rem);
+  line-height: 1.65;
+}
+
+.pc .mt[style*=".66rem"] {
+  font-size: clamp(0.68rem, 2.6vw, 0.78rem) !important;
+  line-height: 1.8;
+}
+
+.paper .pc p.mt {
+  max-width: 100%;
+  padding-inline: 2%;
+  font-size: clamp(0.52rem, 2.8vw, 0.68rem) !important;
+  letter-spacing: clamp(0.04em, 0.25vw, 0.1em);
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.paper .pc .nw {
+  display: inline;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.paper .cer {
+  margin-block: 1.2rem;
+}
+
+.paper .cer .ttl {
+  font-size: clamp(1.7rem, 7vw, 2.3rem);
+}
+
+.paper .cer .row {
+  gap: clamp(0.35rem, 2vw, 0.8rem);
+  font-size: clamp(1.05rem, 4.5vw, 1.4rem);
+  flex-wrap: wrap;
+}
+
+.paper .cer .row b {
+  font-size: clamp(2rem, 8vw, 2.6rem);
+}
+
+.paper .cer .tm {
+  font-size: clamp(1rem, 4vw, 1.25rem);
+}
+
+.pill,
+.btn {
+  max-width: 100%;
+  min-height: 48px;
+  padding: 0.8rem 1.1rem;
+  font-size: clamp(0.7rem, 2.8vw, 0.82rem);
+  line-height: 1.4;
+  white-space: normal;
+}
+
+.cd {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-block: 1.2rem;
+}
+
+.cd div {
+  padding: 0.65rem 0.25rem;
+}
+
+.cd b {
+  font-size: clamp(1.6rem, 7vw, 2rem);
+}
+
+.cd small {
+  font-size: 0.58rem;
+}
+
+.calw {
+  margin-block: 1.2rem;
+  padding: 0.9rem clamp(0.6rem, 3vw, 1rem);
+}
+
+.cg {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.2rem 0;
+}
+
+.cg b {
+  font-size: clamp(0.52rem, 2vw, 0.65rem);
+}
+
+.cg span {
+  font-size: clamp(0.7rem, 2.8vw, 0.85rem);
+}
+
+.fam {
+  margin-top: 1rem;
+}
+
+.fam > div {
+  padding: 1rem clamp(0.75rem, 4vw, 1.2rem);
+  border-radius: 20px;
+}
+
+.fam h3 {
+  font-size: clamp(1.6rem, 7vw, 2rem);
+}
+
+.fam p,
+.grp p {
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.tl {
+  margin: 1.4rem 0 0;
+  padding-left: 34px;
+  text-align: left;
+}
+
+.tl .sp0,
+.tl .sp1 {
+  left: 13px;
+}
+
+.tl .fw {
+  left: -4px;
+  width: 36px;
+  height: 36px;
+}
+
+.ev2 {
+  margin: 0 0 1.2rem;
+  padding: 1rem clamp(0.7rem, 3.5vw, 1rem);
+  border-radius: 22px;
+  overflow-wrap: anywhere;
+}
+
+.ev2 .nd {
+  left: -33px;
+  top: 16px;
+  width: 26px;
+  height: 26px;
+}
+
+.ev2 .nd svg {
+  width: 14px;
+  height: 14px;
+}
+
+.ev2 .med {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 0.4rem;
+}
+
+.ev2 .med svg {
+  width: 23px;
+  height: 23px;
+}
+
+.ev2 h3 {
+  font-size: clamp(1.8rem, 8vw, 2.3rem);
+  line-height: 1.12;
+}
+
+.ev2 .row {
+  gap: 0.35rem 0.5rem;
+  margin: 0.7rem 0 0.2rem;
+  font-size: clamp(0.9rem, 3.6vw, 1rem);
+  white-space: normal;
+  flex-wrap: wrap;
+}
+
+.ev2 .row b {
+  font-size: clamp(2rem, 9vw, 2.7rem);
+}
+
+.ev2 .tm2 {
+  margin-top: 0.5rem;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.62rem;
+}
+
+.ev2 .lc {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.ev2.rv.rvl,
+.ev2.rv.rvr {
+  transform: translateY(14px);
+}
+
+.ev2.rv.rvl.in,
+.ev2.rv.rvr.in {
+  transform: none;
+}
+
+.grp {
+  margin-top: 0.8rem;
+}
+
+.lst {
+  margin-top: 1rem;
+}
+
+.orn {
+  margin-block: 1rem;
+}
+
+.orn svg {
+  width: 14px;
+  height: 14px;
+}
+
+#env {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: max(16px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+  gap: clamp(0.8rem, 3vh, 1.8rem);
+}
+
+.eh {
+  width: min(100%, 600px);
+  padding-inline: 0.75rem;
+}
+
+.eh .pn {
+  font-size: clamp(1.8rem, 9vw, 2.8rem);
+}
+
+.eh .mt {
+  font-size: clamp(0.62rem, 2.6vw, 0.72rem);
+  line-height: 1.7;
+}
+
+.ew {
+  width: min(92vw, 600px, 66vh);
+  max-width: 100%;
+  height: auto;
+  flex: none;
+}
+
+.fl {
+  left: 0;
+  right: auto;
+  top: 0;
+  width: 100%;
+  height: 67%;
+}
+
+.lt {
+  top: 6%;
+  height: 82%;
+}
+
+.sl {
+  left: 50%;
+  top: 74.6%;
+  width: 27%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+}
+
+#sc {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: none;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#sc .pnl {
+  height: 50%;
+}
+
+#sc .pb1 {
+  background-position: 50% calc((var(--vh) - var(--H)) / 2 - var(--vh) / 2);
+}
+
+#up,
+#mu {
+  width: 44px;
+  height: 44px;
+}
+
+.vn {
+  font-size: clamp(1.9rem, 9vw, 2.6rem);
+}
+
+.scr {
+  font-size: 1rem;
+}
+
+.scr .big {
+  font-size: 1.8rem;
+}
+
+.scr .dtl {
+  font-size: 0.68rem;
+}
+
+@media (min-width: 560px) {
+  main {
+    max-width: 680px;
+    padding-inline: clamp(20px, 4vw, 32px);
+  }
+
+  .cd {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .tl {
+    padding-left: 38px;
+  }
+
+  .ev2 .nd {
+    left: -37px;
+  }
+}
+
+@media (min-width: 701px) {
+  main {
+    max-width: 680px;
+    padding-inline: 24px;
+  }
+
+  .hero {
+    max-width: 632px;
+  }
+
+  .paper {
+    max-width: 632px;
+    margin-inline: auto;
+  }
+
+  .pc .sec {
+    padding-top: clamp(3rem, 6vw, 4rem);
+  }
+
+  .paper .nm {
+    font-size: clamp(3rem, 6vw, 4.3rem);
+  }
+
+  .sec h2 {
+    font-size: clamp(2.8rem, 6vw, 4rem);
+  }
+
+  .tl {
+    padding-left: 44px;
+  }
+
+  .ev2 .nd {
+    left: -43px;
+  }
+
+  .ev2 {
+    padding: 1.2rem 1rem;
+  }
+
+  .ev2 .row {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+}
+
+@media (max-height: 560px) and (orientation: landscape) {
+  #env {
+    gap: 0.5rem;
+  }
+
+  .eh {
+    padding-block: 0;
+  }
+
+  .eh .pn {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+  }
+
+  .ew {
+    width: min(72vw, 600px, 58vh);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .tx.tx,
+  .tx.tx-l,
+  .tx.tx-r,
+  .tx.tx-z,
+  .tx.tx-b,
+  .ev2.rv.rvl,
+  .ev2.rv.rvr {
+    opacity: 1;
+    filter: none;
+    transform: none;
+    transition: none;
+  }
+
+  .btn,
+  .ev2,
+  .cd div,
+  .cd b.tick,
+  .orn svg {
+    animation: none;
+    transition: none;
+  }
+}
