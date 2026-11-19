@@ -530,6 +530,26 @@ body {
     0 0 0 1px rgba(173, 135, 71, 0.3);
 }
 
+.paper .cb {
+  display: none;
+}
+
+.paper .pc {
+  padding-bottom: 0;
+}
+
+.footer-art {
+  width: 100cqw;
+  margin: clamp(2rem, 8vw, 4rem) 0 0 -9cqw;
+  line-height: 0;
+}
+
+.footer-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .paper .pc {
   text-rendering: optimizeLegibility;
 }

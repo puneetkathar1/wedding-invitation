@@ -64,7 +64,7 @@ if calendar_links != 1:
 
 styles = r"""
 <style>
-@page { size: 210mm 2080mm; margin: 10mm 12mm 5mm; }
+@page { size: 210mm 2150mm; margin: 10mm 12mm 5mm; }
 @media print {
   html, body, *, *::before, *::after {
     -webkit-print-color-adjust: exact !important;
@@ -108,8 +108,8 @@ styles = r"""
     margin: 0 !important;
     box-shadow: none !important;
   }
-  .paper .pc { padding-bottom: 122mm !important; }
-  .paper .ct, .paper .cb { display: block !important; }
+  .paper .pc { padding-bottom: 0 !important; }
+  .paper .ct { display: block !important; }
   .paper .nm, .pc .sec h2.gv {
     background: none !important;
     background-clip: border-box !important;
@@ -125,7 +125,7 @@ styles = r"""
     transition: none !important;
     visibility: visible !important;
   }
-  .fam, .fam > div, .ev2, .grp, .calw, .mph, .closing-section {
+  .fam, .fam > div, .ev2, .grp, .calw, .mph, .closing-section, .footer-art {
     break-inside: avoid;
     page-break-inside: avoid;
   }
