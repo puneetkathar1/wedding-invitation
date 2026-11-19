@@ -64,52 +64,16 @@ if calendar_links != 1:
 
 styles = r"""
 <style>
-@page { size: 210mm 2080mm; margin: 10mm 12mm 5mm; }
+@page { size: 210mm 2200mm; margin: 10mm 12mm 5mm; }
 @media print {
   html, body, *, *::before, *::after {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
-  html, body {
-    width: auto !important;
-    height: auto !important;
-    overflow: visible !important;
-    scroll-behavior: auto !important;
-    background-color: var(--surface-canvas) !important;
-    background-image:
-      radial-gradient(ellipse at 50% 0, rgba(255,255,255,.84), transparent 54%),
-      linear-gradient(145deg, #f7eee8 0%, #f4e8e8 52%, #f3eadf 100%) !important;
-  }
-  #env, #sc, #up, #mu, #pg, section:has(.scr),
-  section:has(#shr), .tl .sp0, .tl .sp1, .tl .fw, .ev2 .nd {
+  #env, #sc, #up, #mu, #pg, section:has(.scr), section:has(#shr),
+  .tl .sp0, .tl .sp1, .tl .fw, .ev2 .nd {
     display: none !important;
   }
-  .closing-section::before {
-    content: none !important;
-    display: none !important;
-  }
-  .closing-section {
-    position: relative;
-    z-index: 1;
-    margin-top: 0 !important;
-    padding: 5mm 4mm !important;
-    background: transparent !important;
-  }
-  main {
-    width: 100% !important;
-    max-width: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  .paper {
-    width: 100% !important;
-    max-width: none !important;
-    min-height: 0 !important;
-    margin: 0 !important;
-    box-shadow: none !important;
-  }
-  .paper .pc { padding-bottom: 122mm !important; }
-  .paper .ct, .paper .cb { display: block !important; }
   .paper .nm, .pc .sec h2.gv {
     background: none !important;
     background-clip: border-box !important;
@@ -129,7 +93,6 @@ styles = r"""
     break-inside: avoid;
     page-break-inside: avoid;
   }
-  .mph img { max-height: 95mm; object-fit: contain; }
 }
 </style>
 """
@@ -168,8 +131,10 @@ guard document.pageCount == 1 else {
 }
 let text = document.string ?? ""
 guard !text.localizedCaseInsensitiveContains("Counting down"),
-      !text.localizedCaseInsensitiveContains("until Divya") else {
-    fputs("The countdown is still visible in the PDF.\n", stderr)
+      !text.localizedCaseInsensitiveContains("21 Days"),
+      !text.localizedCaseInsensitiveContains("until Divya"),
+      !text.localizedCaseInsensitiveContains("Share invitation") else {
+    fputs("The countdown or share button is still visible in the PDF.\n", stderr)
     exit(1)
 }
 
