@@ -64,7 +64,7 @@ if calendar_links != 1:
 
 styles = r"""
 <style>
-@page { size: 210mm 2200mm; margin: 10mm 12mm 5mm; }
+@page { size: 210mm 2260mm; margin: 10mm 12mm 5mm; }
 @media print {
   html, body, *, *::before, *::after {
     -webkit-print-color-adjust: exact !important;
