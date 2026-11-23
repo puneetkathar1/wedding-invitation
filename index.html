@@ -132,6 +132,7 @@
     @keyframes event-icon-arrive{from{opacity:.5;transform:scale(.76) rotate(-9deg)}to{opacity:1;transform:scale(1) rotate(0)}}
     #events .event-info{width:100%;padding:8px 24px 26px}
     #events .event-info p{overflow-wrap:anywhere}
+    #story .story-card:nth-child(2) img{height:auto;max-height:560px;object-fit:contain;background:#fffaf5}
   </style>
 </head>
 <body class="book-locked">
@@ -168,7 +169,7 @@
       </div>
     </section>
     <section class="page" id="story"><p class="eyebrow">Two hearts, one beautiful beginning</p><h2 class="section-title">Our Story</h2><svg class="title-rosette" aria-hidden="true"><use href="#invitation-rosette"></use></svg>
-      <div class="carousel stories" id="stories"><figure class="story-card"><img src="invite photo.webp" alt="Divya and Harsh together" loading="lazy"><figcaption class="story-caption">The beginning of forever</figcaption></figure><figure class="story-card"><img src="WhatsApp Image 2026-11-18 at 23.03.09.jpeg" alt="A cherished moment with family" loading="lazy"><figcaption class="story-caption">Surrounded by the people we love</figcaption></figure></div><div class="dots" id="dots" aria-label="Story photos"></div>
+      <div class="carousel stories" id="stories"><figure class="story-card"><img src="invite photo.webp" alt="Divya and Harsh together" loading="lazy"><figcaption class="story-caption">The beginning of forever</figcaption></figure><figure class="story-card"><img src="Elegant Watercolor Wedding Portrait.png" alt="Watercolor portrait of Divya and Harsh" loading="lazy"><figcaption class="story-caption">A little glimpse of our forever</figcaption></figure></div><div class="dots" id="dots" aria-label="Story photos"></div>
     </section>
     <section class="page reception"><span class="bloom a">🌹</span><span class="bloom b">🌸</span><p class="eyebrow">An evening of joy</p><h2 class="section-title">Grand Reception</h2><svg class="title-rosette" aria-hidden="true"><use href="#invitation-rosette"></use></svg><p class="date" style="color:#f0d795">7:30 PM onwards</p><p>Join us for dinner, laughter and a night to remember.</p><p class="date" style="color:#f0d795">Monday, 22 February 2027</p><p>Sports Club, Tilhari, Jabalpur</p></section>
     <section class="page" id="location"><p class="eyebrow">We look forward to welcoming you</p><h2 class="section-title">Location</h2><svg class="title-rosette" aria-hidden="true"><use href="#invitation-rosette"></use></svg><a class="map-card" href="https://www.google.com/maps?hl=en-IN&gl=IN&um=1&ie=UTF-8&fb=1&sa=X&geocode=KX2dcB-OrYE5McTsq-W2GDda&daddr=OYO+Sports+Club+Of+Jabalpur,+7+7/8,+Mandla+-+Jabalpur+Rd,+near+vishal+Datt+petrol+pump,+Bilhari,+Jabalpur,+Madhya+Pradesh+482020" target="_blank" rel="noopener" aria-label="Open location in Google Maps"><span class="map-road"></span><span class="pin">📍</span></a><p class="address" id="address">Sports Club of Jabalpur<br>7 7/8, Mandla - Jabalpur Road, near Vishal Datt Petrol Pump<br>Bilhari, Jabalpur, Madhya Pradesh 482020</p><div><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps?hl=en-IN&gl=IN&um=1&ie=UTF-8&fb=1&sa=X&geocode=KX2dcB-OrYE5McTsq-W2GDda&daddr=OYO+Sports+Club+Of+Jabalpur,+7+7/8,+Mandla+-+Jabalpur+Rd,+near+vishal+Datt+petrol+pump,+Bilhari,+Jabalpur,+Madhya+Pradesh+482020">Get directions</a><button class="btn secondary" id="copy">Copy address</button></div>
@@ -223,7 +224,7 @@ function palace(w,h,lt){
       $('#palaceBook').src=palUrls[0];
       document.documentElement.style.setProperty('--pal',`url(${palUrls[1]})`);
       $('#palaceFixed').src=palUrls[2];
-      const imgs=['invite photo.webp','WhatsApp Image 2026-11-18 at 23.03.09.jpeg','footerSVG.png',...palUrls];
+      const imgs=['invite photo.webp','Elegant Watercolor Wedding Portrait.png','footerSVG.png',...palUrls];
       const ready=Promise.all([document.fonts?document.fonts.ready:Promise.resolve(),...imgs.map(src=>new Promise(resolve=>{const i=new Image();i.onload=i.onerror=resolve;i.src=src})),new Promise(resolve=>{if(audio.readyState>=2)resolve();else{audio.addEventListener('canplaythrough',resolve,{once:true});audio.addEventListener('error',resolve,{once:true});setTimeout(resolve,3000)}})]);
       ready.then(()=>setTimeout(()=>loader.classList.add('hide'),220));
       function petals(count=24){const box=$('#petals');for(let n=0;n<count;n++){const p=document.createElement('i');p.className='petal';p.style.left=Math.random()*100+'%';p.style.setProperty('--x',(Math.random()*180-90)+'px');p.style.animationDelay=Math.random()*1.2+'s';box.append(p);setTimeout(()=>p.remove(),6500)}}
