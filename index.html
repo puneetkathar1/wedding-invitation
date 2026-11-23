@@ -37,6 +37,7 @@
     :root{--disp:'Cormorant Garamond','Playfair Display',Georgia,serif}
     .rose,.peacock-side{display:none}
     .palace-fixed{object-fit:fill;height:100%;height:100lvh}
+    .intro::before{background-size:100% 100%}
     .page{padding-block:clamp(48px,10vh,90px)}
     .endpaper{background:radial-gradient(ellipse at 50% 40%,#2e5d88,#122f4e);box-shadow:inset 0 0 0 10px #173653,inset 0 0 0 11px #d8b86b}
     .book-page-seal{background:#fffdf8;box-shadow:0 0 0 3px #fffaf0,0 0 0 4px #c9a55c}
@@ -199,7 +200,7 @@ const f=n=>+n.toFixed(1);
 const star=(x,y,o,i,n)=>Array.from({length:2*n},(_,k)=>{const a=k*Math.PI/n,r=k%2?i:o;return f(x+r*Math.sin(a))+','+f(y-r*Math.cos(a))}).join(' ');
 const G=(t,id,a,s)=>`<${t}Gradient id="${id}" ${a}>${s.map(([o,c])=>`<stop offset="${o}" stop-color="${c}"/>`).join('')}</${t}Gradient>`;
 function palace(w,h,lt){
-  const cx=w/2,x0=w*.06+6,x1=w-x0,aw=x1-x0,ys=h*.4,top=h*.1,ah=ys-top,bs=h*.87,sg=h*.028;
+  const cx=w/2,x0=w*.06+6,x1=w-x0,aw=x1-x0,ys=h*.4,top=h*.1,ah=ys-top,bs=h*.96,sg=h*.028;
   const arch=d=>`M${f(x0+d)} ${f(bs)}V${f(ys)}C${f(x0+d)} ${f(ys-ah*.55)} ${f(cx-aw*.2)} ${f(top+d+ah*.22)} ${f(cx)} ${f(top+d)}C${f(cx+aw*.2)} ${f(top+d+ah*.22)} ${f(x1-d)} ${f(ys-ah*.55)} ${f(x1-d)} ${f(ys)}V${f(bs)}`;
   const gp=`M0 0Q${f(cx)} ${f(2*sg)} ${w} 0`,fs=w*.0022;
   const ft=(x,a)=>`<use href="#ft" transform="translate(${f(x)} ${f(h-8)}) rotate(${a}) scale(${f(fs)})"/>`;
