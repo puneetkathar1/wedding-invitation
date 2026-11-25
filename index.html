@@ -149,6 +149,22 @@
     @keyframes event-icon-arrive{from{opacity:.5;transform:scale(.76) rotate(-9deg)}to{opacity:1;transform:scale(1) rotate(0)}}
     #events .event-info{width:100%;padding:8px 24px 26px}
     #events .event-info p{overflow-wrap:anywhere}
+    /* The book stays anchored while only its cover swings on the spine. */
+    .book.open{transform:none}
+    .book.open .bookcover{transform:rotateY(-155deg)}
+    .cover-inner{backface-visibility:hidden;-webkit-backface-visibility:hidden}
+    /* Give each celebration its own softly layered scene, with color behind its icon. */
+    #events .event-card:nth-child(2) .scene{background:linear-gradient(145deg,#23395f,#76527c 54%,#e39b67)}
+    #events .event-card:nth-child(2) .scene:before{background:radial-gradient(ellipse at 50% 100%,#f7c56d99 0 17%,transparent 18%),radial-gradient(ellipse at 22% 20%,#edb7cf88 0 14%,transparent 15%),radial-gradient(ellipse at 78% 20%,#f4d79488 0 14%,transparent 15%),linear-gradient(180deg,#172d4c66,transparent 70%);filter:blur(5px)}
+    #events .event-card:nth-child(3) .scene{background:linear-gradient(145deg,#90c9cf,#468da6 55%,#285b79)}
+    #events .event-card:nth-child(3) .scene:before{background:radial-gradient(ellipse at 50% 100%,#d9f4e6aa 0 24%,transparent 25%),radial-gradient(circle at 18% 25%,#fff4ccaa 0 8%,transparent 9%),radial-gradient(circle at 82% 30%,#effbffaa 0 7%,transparent 8%),linear-gradient(180deg,#e8ffff44,transparent);filter:blur(5px)}
+    #events .event-card:nth-child(4) .scene{background:linear-gradient(145deg,#f1bb70,#c96d55 52%,#27476c)}
+    #events .event-card:nth-child(4) .scene:before{background:radial-gradient(ellipse at 50% 100%,#f9dc8cbb 0 20%,transparent 21%),radial-gradient(circle at 20% 22%,#ffe7a088 0 8%,transparent 9%),radial-gradient(circle at 80% 28%,#fff1c088 0 7%,transparent 8%),linear-gradient(180deg,#63395044,transparent);filter:blur(5px)}
+    #events .event-card:nth-child(5) .scene{background:linear-gradient(145deg,#152a48,#304b70 55%,#765846)}
+    #events .event-card:nth-child(5) .scene:before{background:radial-gradient(ellipse at 50% 88%,#f3a84eaa 0 11%,#d6753c77 18%,transparent 34%),radial-gradient(circle at 50% 60%,#ffdf91aa 0 4%,transparent 5%),radial-gradient(circle at 18% 18%,#dfc77a66 0 1px,transparent 2px),radial-gradient(circle at 82% 26%,#dfc77a66 0 1px,transparent 2px);filter:blur(4px)}
+    .reception>*{max-width:100%;}
+    .reception .section-title{width:100%;padding-inline:8px;font-size:clamp(1.8rem,8vw,3rem);line-height:1.15;overflow-wrap:anywhere}
+    .reception>p:not(.eyebrow){padding-inline:8px;overflow-wrap:anywhere}
   </style>
 </head>
 <body class="book-locked">
@@ -218,7 +234,7 @@
       <article class="family-card"><span class="role">Didi &amp; Jijaji</span><p>Mrs. Nidhi &amp; Mr. Jugal Sahu<br>Mrs. Swati &amp; Mr. Yogendra Nayak<br>Mrs. Mansi &amp; Mr. Aditya Sahu</p></article>
       <article class="family-card"><span class="role">Bhai Behen</span><p>Shwalpa, Aditya, Prakhar, Astha, Devansh, Akriti, Akshansh, Apoorv, Khushi, Arpita, Shriya, Priyanshi, Arnav &amp; Navya</p></article>
     </div></section>
-    <section class="page compact-page" id="little-ones"><p class="eyebrow">The Joy of Our Home</p><h2 class="section-title">Little Ones</h2><svg class="title-rosette" aria-hidden="true"><use href="#invitation-rosette"></use></svg><div class="family-list"><article class="family-card"><p>Arav, Kanav, Dhanvi &amp; Darshit</p></article></div></section>
+    <section class="page compact-page" id="little-ones"><p class="eyebrow">The Joy of Our Home</p><h2 class="section-title">Little Ones</h2><svg class="title-rosette" aria-hidden="true"><use href="#invitation-rosette"></use></svg><div class="family-list"><article class="family-card"><p>Aarav, Kanav, Dhanvi &amp; Darshit</p></article></div></section>
     <section class="page closing"><div class="medallion"><svg class="divine-mark" viewBox="0 0 100 100" aria-hidden="true"><use href="#divine-ganpati-mark"/></svg></div><p class="eyebrow">With the blessings of Ganesh ji</p><h2>We can't wait to celebrate with you</h2><p class="family-names">With love,<br><strong>The Kathar &amp; Sahu Families</strong><br><br>Mrs. Sunanda &amp; Mr. Subodh Kathar<br>Mrs. Archana &amp; Mr. Tarachand Sahu</p></section>
   </main>
   <div class="petals" id="petals" aria-hidden="true"></div><audio id="music" src="Tum Tak_320(KoshalWorld.Com).mp3" preload="auto" loop></audio><button class="music" id="musicbtn" aria-label="Toggle music">♫ Music</button>
